@@ -1,0 +1,8 @@
+@mixin linearGradient($top, $bottom) {
+    background: $bottom;
+    background: -moz-linear-gradient(top, $top, $bottom);
+    background: -webkit-linear-gradient(top, $top, $bottom);
+    background: -o-linear-gradient(top, $top, $bottom);
+    background: -ms-linear-gradient(top, $top, $bottom);
+    background: linear-gradient(top, $top, $bottom);
+}

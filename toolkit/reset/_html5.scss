@@ -1,0 +1,19 @@
+// Corrects block display not defined in IE8/9 & FF3
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// Addresses styling for 'hidden' attribute not present in IE8/9, FF3, S4.
+[hidden] {
+    display: none;
+}

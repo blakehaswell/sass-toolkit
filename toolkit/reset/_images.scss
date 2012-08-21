@@ -1,0 +1,11 @@
+// Removes border when inside 'a' element in IE6/7/8/9, FF3
+a {
+    img {
+        border: 0;
+    }
+}
+
+// Responsive images out of the box.
+img {
+    @include fluidImage;
+}

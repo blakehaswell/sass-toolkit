@@ -1,0 +1,32 @@
+// Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+// http://clagnut.com/blog/348/#c790
+html {
+    font-size: 100%;
+}
+
+// Prevents iOS text size adjust after orientation change, without disabling user zoom
+// http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+}

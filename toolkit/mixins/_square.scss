@@ -1,0 +1,3 @@
+@mixin square($size) {
+    @include size($size, $size);
+}
