@@ -30,3 +30,18 @@ textarea {
     font-size: $baseFontSize;
     line-height: $baseLineHeight;
 }
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $monoFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
