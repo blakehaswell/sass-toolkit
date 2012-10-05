@@ -1,0 +1,8 @@
+@mixin placeholderStyles {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+       @content;
+    }
+}

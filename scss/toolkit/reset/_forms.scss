@@ -14,16 +14,18 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button;
+    -webkit-appearance: none;
 }
 
-// Remove margin and borders from buttons across browsers.
+// Remove styles from buttons across browsers.
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     border: 0;
     margin: 0;
+    background: transparent;
+    color: $textColour;
 }
 
 // Improve usability and consistency of cursor style on buttons and inputs.
@@ -62,4 +64,18 @@ textarea {
     vertical-align: top;
 }
 
-// TODO Default styling for inputs based on form variables.
+// Remove styles from text inputs
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    @include placeholderStyles {
+        color: $textColour;
+    }
+    
+    border: 0;
+    color: $textColour;
+    display: block;
+    width: 100%;
+}
