@@ -9,7 +9,7 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### SASS:
 
-    backgroundImageRetina("../images/image", 32px, 16px)
+    @include backgroundImageRetina("../images/image", 32px, 16px);
 
 #### Produces:
 
