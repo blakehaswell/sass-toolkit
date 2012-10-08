@@ -1,5 +1,5 @@
 * {
-    @include boxSizing($defaultBoxModel);
+    @include boxSizing(border-box);
 }
 
 body {
