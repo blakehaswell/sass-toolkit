@@ -35,6 +35,17 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### Produces:
 
+    zoom: 1; // Trigger hasLayout in IE6/7
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+
 ## fluidImage
 
 ### Example
@@ -44,6 +55,10 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
     @include fluidImage;
 
 #### Produces:
+
+    display: block;
+    max-width: 100%;
+    height: auto;
 
 ## generatedContent
 
@@ -55,6 +70,9 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### Produces:
 
+    content: '';
+    display: block;
+
 ## hidden
 
 ### Example
@@ -64,6 +82,8 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
     @include hidden;
 
 #### Produces:
+
+    display: none;
 
 ## horizontallyCentred
 
@@ -75,6 +95,9 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### Produces:
 
+    margin-left: auto;
+    margin-right: auto;
+
 ## imageReplacement
 
 ### Example
@@ -84,6 +107,8 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
     @include imageReplacement;
 
 #### Produces:
+
+    text-indent: -9999px;
 
 ## positionAbs($left, $top)
 
@@ -95,15 +120,23 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### Produces:
 
+    position: absolute;
+    left: 40px;
+    top: 10px;
+
 ## positionRel($left, $top)
 
 ### Example
 
 #### SASS:
 
-    @include positionAbs(40px, 10px);
+    @include positionRel(30px, 15px);
 
 #### Produces:
+
+    position: relative;
+    left: 30px;
+    top: 15px;
 
 ## size($width, $height)
 
@@ -115,6 +148,9 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 #### Produces:
 
+    width: 300px;
+    height: 40px;
+
 ## square($size)
 
 ### Example
@@ -124,3 +160,6 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
     @include square(16px);
 
 #### Produces:
+
+    width: 16px;
+    height: 16px;
