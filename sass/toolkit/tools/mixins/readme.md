@@ -5,13 +5,11 @@ Mixins
 
 The `backgroundImageRetina` mixin takes a filename, a width, and a height. It will set the `background-image` property to `filename + ".png"`, as well as creating a media query which will set the `background-image` property to `filename + "@2x.png"` as well as the `background-size` property.
 
-### Example
-
-#### SASS:
+### Example:
 
     @include backgroundImageRetina("../images/image", 32px, 16px);
 
-#### Produces:
+### Produces:
 
     background-image: url("../images/image.png");
     
@@ -27,13 +25,11 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## clearfix
 
-### Example
-
-#### SASS:
+### Example:
 
     @include clearfix;
 
-#### Produces:
+### Produces:
 
     zoom: 1; // Trigger hasLayout in IE6/7
 
@@ -48,13 +44,11 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## fluidImage
 
-### Example
-
-#### SASS:
+### Example:
 
     @include fluidImage;
 
-#### Produces:
+### Produces:
 
     display: block;
     max-width: 100%;
@@ -62,63 +56,53 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## generatedContent
 
-### Example
-
-#### SASS:
+### Example:
 
     @include generatedContent;
 
-#### Produces:
+### Produces:
 
     content: '';
     display: block;
 
 ## hidden
 
-### Example
-
-#### SASS:
+### Example:
 
     @include hidden;
 
-#### Produces:
+### Produces:
 
     display: none;
 
 ## horizontallyCentred
 
-### Example
-
-#### SASS:
+### Example:
 
     @include horizontallyCentred;
 
-#### Produces:
+### Produces:
 
     margin-left: auto;
     margin-right: auto;
 
 ## imageReplacement
 
-### Example
-
-#### SASS:
+### Example:
 
     @include imageReplacement;
 
-#### Produces:
+### Produces:
 
     text-indent: -9999px;
 
 ## positionAbs($left, $top)
 
-### Example
-
-#### SASS:
+### Example:
 
     @include positionAbs(40px, 10px);
 
-#### Produces:
+### Produces:
 
     position: absolute;
     left: 40px;
@@ -126,13 +110,11 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## positionRel($left, $top)
 
-### Example
-
-#### SASS:
+### Example:
 
     @include positionRel(30px, 15px);
 
-#### Produces:
+### Produces:
 
     position: relative;
     left: 30px;
@@ -140,26 +122,22 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## size($width, $height)
 
-### Example
-
-#### SASS:
+### Example:
 
     @include size(300px, 40px);
 
-#### Produces:
+### Produces:
 
     width: 300px;
     height: 40px;
 
 ## square($size)
 
-### Example
-
-#### SASS:
+### Example:
 
     @include square(16px);
 
-#### Produces:
+### Produces:
 
     width: 16px;
     height: 16px;
