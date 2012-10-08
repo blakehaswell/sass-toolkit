@@ -65,16 +65,6 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
     content: '';
     display: block;
 
-## hidden
-
-### Example:
-
-    @include hidden;
-
-### Produces:
-
-    display: none;
-
 ## horizontallyCentred
 
 ### Example:
