@@ -27,20 +27,100 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## clearfix
 
+### Example
+
+#### SASS:
+
+    @include clearfix;
+
+#### Produces:
+
 ## fluidImage
+
+### Example
+
+#### SASS:
+
+    @include fluidImage;
+
+#### Produces:
 
 ## generatedContent
 
+### Example
+
+#### SASS:
+
+    @include generatedContent;
+
+#### Produces:
+
 ## hidden
+
+### Example
+
+#### SASS:
+
+    @include hidden;
+
+#### Produces:
 
 ## horizontallyCentred
 
+### Example
+
+#### SASS:
+
+    @include horizontallyCentred;
+
+#### Produces:
+
 ## imageReplacement
+
+### Example
+
+#### SASS:
+
+    @include imageReplacement;
+
+#### Produces:
 
 ## positionAbs($left, $top)
 
+### Example
+
+#### SASS:
+
+    @include positionAbs(40px, 10px);
+
+#### Produces:
+
 ## positionRel($left, $top)
+
+### Example
+
+#### SASS:
+
+    @include positionAbs(40px, 10px);
+
+#### Produces:
 
 ## size($width, $height)
 
+### Example
+
+#### SASS:
+
+    @include size(300px, 40px);
+
+#### Produces:
+
 ## square($size)
+
+### Example
+
+#### SASS:
+
+    @include square(16px);
+
+#### Produces:
