@@ -71,11 +71,11 @@ input[type="tel"],
 input[type="url"],
 textarea {
     @include placeholderStyles {
-        color: $textColour;
+        color: inherit;
     }
     
     border: 0;
-    color: $textColour;
+    color: inherit;
     display: block;
     width: 100%;
 }

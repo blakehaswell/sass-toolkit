@@ -125,7 +125,7 @@ input[type="tel"],
 input[type="url"],
 textarea {
   border: 0;
-  color: black;
+  color: inherit;
   display: block;
   width: 100%; }
   input[type="text"]::-webkit-input-placeholder,
@@ -133,13 +133,13 @@ textarea {
   input[type="tel"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
-    color: black; }
+    color: inherit; }
   input[type="text"]:-moz-placeholder,
   input[type="email"]:-moz-placeholder,
   input[type="tel"]:-moz-placeholder,
   input[type="url"]:-moz-placeholder,
   textarea:-moz-placeholder {
-    color: black; }
+    color: inherit; }
 
 html {
   font-size: 100%; }
@@ -179,5 +179,5 @@ pre {
   word-wrap: break-word; }
 
 body {
-  background: white;
-  color: black; }
+  background: #fff;
+  color: #000; }
