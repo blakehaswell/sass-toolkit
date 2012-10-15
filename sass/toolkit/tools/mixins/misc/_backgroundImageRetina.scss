@@ -1,5 +1,9 @@
-@mixin backgroundImageRetina($fileName, $width, $height) {
+@mixin backgroundImageRetina($fileName, $width, $height: null) {
     background-image: url($fileName + ".png");
+    
+    @if $height == null {
+        $height: $width;
+    }
     
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
             only screen and (-o-min-device-pixel-ratio: 3/2),
