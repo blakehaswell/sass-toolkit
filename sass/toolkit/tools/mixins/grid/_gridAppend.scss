@@ -1,0 +1,3 @@
+@mixin gridAppend($columns, $context: $totalColumns) {
+    margin-right: calculatePercentage($columns, $context);
+}
