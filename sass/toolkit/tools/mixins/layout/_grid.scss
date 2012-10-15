@@ -1,0 +1,33 @@
+@mixin gridContainer {
+    @include clearfix;
+    
+    max-width: $containerWidth;
+}
+
+@mixin gridColumn($columns, $context: $totalColumns, $includePadding: true) {
+    float: left;
+    width: calculatePercentage($columns, $context);
+    
+    @if includePadding {
+        padding-left: $gridGutter / 2;
+        padding-right: $gridGutter / 2;
+    }
+}
+
+@mixin gridPrepend($columns, $context: $totalColumns) {
+    margin-left: calculatePercentage($columns, $context);
+}
+
+@mixin gridAppend($columns, $context: $totalColumns) {
+    margin-right: calculatePercentage($columns, $context);
+}
+
+@mixin gridPush($columns, $context: $totalColumns) {
+    position: relative;
+    left: calculatePercentage($columns, $context);
+}
+
+@mixin gridPull($columns, $context: $totalColumns) {
+    position: relative;
+    left: 0 - calculatePercentage($columns, $context);
+}

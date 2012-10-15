@@ -1,3 +1,0 @@
-@mixin gridPrepend($columns, $context: $totalColumns) {
-    margin-left: calculatePercentage($columns, $context);
-}

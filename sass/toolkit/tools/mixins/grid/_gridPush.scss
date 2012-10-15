@@ -1,4 +1,0 @@
-@mixin gridPush($columns, $context: $totalColumns) {
-    position: relative;
-    left: calculatePercentage($columns, $context);
-}

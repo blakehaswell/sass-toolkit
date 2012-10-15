@@ -9,15 +9,9 @@
 @import "mixins/layout/boxSizing";
 @import "mixins/layout/clearfix";
 @import "mixins/layout/fluidImage";
+@import "mixins/layout/grid";
 @import "mixins/layout/horizontallyCentred";
 @import "mixins/layout/positionAbs";
 @import "mixins/layout/positionRel";
 @import "mixins/layout/size";
 @import "mixins/layout/square";
-
-@import "mixins/grid/gridContainer";
-@import "mixins/grid/gridColumn";
-@import "mixins/grid/gridPrepend";
-@import "mixins/grid/gridAppend";
-@import "mixins/grid/gridPush";
-@import "mixins/grid/gridPull";

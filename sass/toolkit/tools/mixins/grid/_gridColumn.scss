@@ -1,9 +1,0 @@
-@mixin column($columns, $context: $totalColumns, $includePadding: true) {
-    float: left;
-    width: calculatePercentage($columns, $context);
-    
-    @if includePadding {
-        padding-left: $gridGutter / 2;
-        padding-right: $gridGutter / 2;
-    }
-}
