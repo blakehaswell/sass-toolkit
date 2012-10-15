@@ -1,12 +1,23 @@
-@import "mixins/css3";
-@import "mixins/clearfix";
-@import "mixins/backgroundImageRetina";
-@import "mixins/horizontallyCentred";
-@import "mixins/fluidImage";
-@import "mixins/generatedContent";
-@import "mixins/grid";
-@import "mixins/imageReplacement";
-@import "mixins/positionAbs";
-@import "mixins/positionRel";
-@import "mixins/size";
-@import "mixins/square";
+@import "mixins/misc/backgroundImageRetina";
+@import "mixins/misc/borderRadius";
+@import "mixins/misc/boxShadow";
+@import "mixins/misc/generatedContent";
+@import "mixins/misc/imageReplacement";
+@import "mixins/misc/linearGradient";
+@import "mixins/misc/placeholderStyles";
+
+@import "mixins/layout/boxSizing";
+@import "mixins/layout/clearfix";
+@import "mixins/layout/fluidImage";
+@import "mixins/layout/horizontallyCentred";
+@import "mixins/layout/positionAbs";
+@import "mixins/layout/positionRel";
+@import "mixins/layout/size";
+@import "mixins/layout/square";
+
+@import "mixins/grid/gridContainer";
+@import "mixins/grid/gridColumn";
+@import "mixins/grid/gridPrepend";
+@import "mixins/grid/gridAppend";
+@import "mixins/grid/gridPush";
+@import "mixins/grid/gridPull";
