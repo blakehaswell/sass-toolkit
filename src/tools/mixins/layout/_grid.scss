@@ -1,5 +1,6 @@
 @mixin gridContainer {
     @include clearfix;
+    @include horizontallyCentred;
     
     max-width: $containerWidth;
 }
