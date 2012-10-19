@@ -1,0 +1,33 @@
+$mq-mobile: 480px;
+$mq-tablet: 960px;
+// Other widths: 320, 480, 640, 800, 960, 1280
+
+@mixin mq-mobile-only {
+    @media (max-width: $mq-mobile) {
+        @content;
+    }
+}
+
+@mixin mq-tablet-only {
+    @media (min-width: $mq-mobile + 1px) and (max-width: $mq-tablet) {
+        @content;
+    }
+}
+
+@mixin mq-tablet-and-up {
+    @media (min-width: $mq-mobile + 1px) {
+        @content;
+    }
+}
+
+@mixin mq-tablet-and-under {
+    @media (max-width: $mq-tablet) {
+        @content;
+    }
+}
+
+@mixin mq-desktop-only {
+    @media (min-width: $mq-tablet + 1px) {
+        @content;
+    }
+}
