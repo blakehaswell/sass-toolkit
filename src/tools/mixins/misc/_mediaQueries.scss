@@ -1,6 +1,8 @@
 $mq-mobile: 480px;
+$mq-small-tablet: 640px;
 $mq-tablet: 960px;
-// Other widths: 320, 480, 640, 800, 960, 1280
+$mq-desktop: 1280px;
+// Other widths: 320, 800
 
 @mixin mq-mobile-only {
     @media (max-width: $mq-mobile) {
@@ -8,14 +10,32 @@ $mq-tablet: 960px;
     }
 }
 
+@mixin mq-small-tablet-only {
+    @media (min-width: $mq-mobile + 1px) and (max-width: $mq-small-tablet) {
+        @content;
+    }
+}
+
+@mixin mq-small-tablet-and-up {
+    @media (min-width: $mq-mobile + 1px) {
+        @content;
+    }
+}
+
+@mixin mq-small-tablet-and-under {
+    @media (max-width: $mq-small-tablet) {
+        @content;
+    }
+}
+
 @mixin mq-tablet-only {
-    @media (min-width: $mq-mobile + 1px) and (max-width: $mq-tablet) {
+    @media (min-width: $mq-small-tablet + 1px) and (max-width: $mq-tablet) {
         @content;
     }
 }
 
 @mixin mq-tablet-and-up {
-    @media (min-width: $mq-mobile + 1px) {
+    @media (min-width: $mq-small-tablet + 1px) {
         @content;
     }
 }
@@ -26,7 +46,19 @@ $mq-tablet: 960px;
     }
 }
 
+@mixin mq-desktop-and-under {
+    @media (max-width: $mq-desktop) {
+        @content;
+    }
+}
+
 @mixin mq-desktop-only {
+    @media (min-width: $mq-tablet + 1px) and (max-width: $mq-desktop) {
+        @content;
+    }
+}
+
+@mixin mq-desktop-and-up {
     @media (min-width: $mq-tablet + 1px) {
         @content;
     }
