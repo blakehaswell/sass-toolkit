@@ -9,7 +9,7 @@
     float: left;
     width: calculatePercentage($columns, $context);
     
-    @if includePadding {
+    @if $includePadding {
         padding-left: $gridGutter / 2;
         padding-right: $gridGutter / 2;
     }
