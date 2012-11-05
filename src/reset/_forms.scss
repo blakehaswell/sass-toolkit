@@ -64,18 +64,26 @@ textarea {
     vertical-align: top;
 }
 
+// Remove default placeholder styles.
+input {
+    @include placeholderStyles {
+        color: inherit;
+    }
+}
+
+// Remove default styles from inputs.
+input,
+textarea {
+    border: 0;
+    color: inherit;
+}
+
 // Remove styles from text inputs
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"],
 textarea {
-    @include placeholderStyles {
-        color: inherit;
-    }
-    
-    border: 0;
-    color: inherit;
     display: block;
     width: 100%;
 }

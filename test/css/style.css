@@ -119,27 +119,23 @@ textarea {
 textarea {
   vertical-align: top; }
 
+input::-webkit-input-placeholder {
+  color: inherit; }
+input:-moz-placeholder {
+  color: inherit; }
+
+input,
+textarea {
+  border: 0;
+  color: inherit; }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"],
 textarea {
-  border: 0;
-  color: inherit;
   display: block;
   width: 100%; }
-  input[type="text"]::-webkit-input-placeholder,
-  input[type="email"]::-webkit-input-placeholder,
-  input[type="tel"]::-webkit-input-placeholder,
-  input[type="url"]::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: inherit; }
-  input[type="text"]:-moz-placeholder,
-  input[type="email"]:-moz-placeholder,
-  input[type="tel"]:-moz-placeholder,
-  input[type="url"]:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: inherit; }
 
 html {
   font-size: 100%; }
