@@ -5,4 +5,5 @@
     background: -o-linear-gradient(top, $top, $bottom);
     background: -ms-linear-gradient(top, $top, $bottom);
     background: linear-gradient(top, $top, $bottom);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}',GradientType=0 ); /* IE6-9 */
 }
