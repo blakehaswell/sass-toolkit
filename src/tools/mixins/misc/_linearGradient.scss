@@ -1,6 +1,8 @@
 @mixin linearGradient($top, $bottom) {
     background: $bottom;
     background: -moz-linear-gradient(top, $top, $bottom);
+    // For Android below 4.0, we need to use the old syntax. See http://stackoverflow.com/a/10536982
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $top), color-stop(100%, $bottom));
     background: -webkit-linear-gradient(top, $top, $bottom);
     background: -o-linear-gradient(top, $top, $bottom);
     background: -ms-linear-gradient(top, $top, $bottom);
