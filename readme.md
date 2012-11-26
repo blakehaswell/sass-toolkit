@@ -14,6 +14,10 @@ SASS Toolkit has been specifically built for for mobile and responsive sites tha
 Using SASS Toolkit
 ------------------
 
+To recompile the toolkit sass -> css for the test page:
+
+    sass --watch test/sass/:test/css/
+
 Browser Support
 ---------------
 
