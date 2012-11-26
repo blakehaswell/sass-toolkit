@@ -1,0 +1,10 @@
+// SCSS File for the mixins only
+
+@import "../../src/tools";
+@import "../../src/reset";
+
+// Test classes
+
+.linearTest {
+	@include linearGradient(lighten($darkerGrey, 50%), $darkerGrey);
+}
