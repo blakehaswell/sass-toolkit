@@ -139,7 +139,8 @@ input[type="tel"],
 input[type="url"],
 textarea {
   display: block;
-  width: 100%; }
+  width: 100%;
+  -webkit-appearance: none; }
 
 html {
   font-size: 100%; }
