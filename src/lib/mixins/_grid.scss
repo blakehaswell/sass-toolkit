@@ -1,3 +1,7 @@
+$containerWidth: 960px !default;
+$totalColumns: 12 !default;
+$gridGutter: 20px !default;
+
 @mixin gridContainer {
     @include clearfix;
     @include horizontallyCentred;
