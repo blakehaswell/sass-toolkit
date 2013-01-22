@@ -7,7 +7,7 @@
 }
 
 @mixin positionRel($left: null, $top: null, $right: null, $bottom: null) {
-    position: absolute;
+    position: relative;
     left: $left;
     top: $top;
     right: $right;
