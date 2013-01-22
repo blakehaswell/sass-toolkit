@@ -1,22 +1,22 @@
 // ============================================================================
 // Fonts
 // ============================================================================
-//$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$altFontFamily: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//$monoFontFamily: Menlo, Monaco, "Courier New", monospace;
-//
-//$baseFontSize: 14px;
-//$baseLineHeight: 20px;
+$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$altFontFamily: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !default;
+$monoFontFamily: Menlo, Monaco, "Courier New", monospace !default;
+
+$baseFontSize: 14px !default;
+$baseLineHeight: 20px !default;
 
 // ============================================================================
 // Colours
 // ============================================================================
-//$bodyBackground: #fff;
-//$textColour: #000;
+$bodyBackground: #fff !default;
+$textColour: #000 !default;
 
 // ============================================================================
 // Grid
 // ============================================================================
-//$containerWidth: 960px;
-//$totalColumns: 12;
-//$gridGutter: 20px;
+$containerWidth: 960px !default;
+$totalColumns: 12 !default;
+$gridGutter: 20px !default;
