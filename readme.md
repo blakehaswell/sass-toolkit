@@ -11,6 +11,25 @@ Built for mobile & responsive
 
 Sass Toolkit has been specifically built for for mobile and responsive sites that are aimed at modern browsers. It uses the `border-box` box model, and out of the box you get responsive images which look great on any sized device, support for HTML5, and mixins for common CSS3 patterns.
 
+Installing Sass Toolkit In An Existing Project
+----------------------------------------------
+
+    git remote add sass-toolkit git://...
+    
+    git fetch
+    
+    git merge sass-toolkit/master
+    
+    # Move the sass directory whereever you like.
+    mv sass/ assets/
+
+Updating Sass Toolkit
+---------------------
+
+    git fetch sass-toolkit
+    
+    git merge sass-toolkit/master
+
 Using Sass Toolkit
 ------------------
 
