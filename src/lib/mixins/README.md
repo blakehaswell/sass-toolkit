@@ -31,20 +31,19 @@ The `backgroundImageRetina` mixin allows you to easily set a background image th
 
 ## clearfix
 
-### Example:
+Including the `clearfix` mixin forces the element to contain any floated child elements.
 
-    @include clearfix;
+### Example:
+    
+    .container {
+        @include clearfix;
+    }
 
 ### Produces:
 
-    zoom: 1; // Trigger hasLayout in IE6/7
-
-    &:before,
-    &:after {
+    .container:after {
         content: "";
         display: table;
-    }
-    &:after {
         clear: both;
     }
 
