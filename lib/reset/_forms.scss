@@ -5,8 +5,11 @@ select,
 textarea {
     vertical-align: baseline;
     *vertical-align: middle;
+    border: 0;
     margin: 0;
     padding: 0;
+    background: transparent;
+    color: inherit;
 }
 
 // Corrects inability to style clickable 'input' types in iOS
@@ -22,9 +25,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    border: 0;
-    margin: 0;
-    background: transparent;
     color: $textColour;
 }
 
@@ -65,17 +65,11 @@ textarea {
 }
 
 // Remove default placeholder styles.
-input {
+input,
+textarea {
     @include placeholderStyles {
         color: inherit;
     }
-}
-
-// Remove default styles from inputs.
-input,
-textarea {
-    border: 0;
-    color: inherit;
 }
 
 // Remove styles from text inputs
