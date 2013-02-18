@@ -1,6 +1,6 @@
-html {
+body {
     font-family: $baseFontFamily;
-    font-size: calculatePercentage($baseFontSize, 16);
+    font-size: calculatePercentage($baseFontSize, $browserDefaultFontSize);
     line-height: ($baseLineHeight / $baseFontSize);
 }
 
