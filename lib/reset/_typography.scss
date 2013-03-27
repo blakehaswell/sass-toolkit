@@ -1,7 +1,7 @@
-// Corrects text resizing oddly in IE6/7 when body font-size is set using em units
-// http://clagnut.com/blog/348/#c790
-html {
-    font-size: 100%;
+body {
+    font-family: $baseFontFamily;
+    font-size: calculatePercentage($baseFontSize, $browserDefaultFontSize);
+    line-height: ($baseLineHeight / $baseFontSize);
 }
 
 // Prevents iOS text size adjust after orientation change, without disabling user zoom
@@ -21,14 +21,13 @@ q:after {
     content: none;
 }
 
-body,
 button,
 input,
 select,
 textarea {
-    font-family: $baseFontFamily;
-    font-size: $baseFontSize;
-    line-height: $baseLineHeight;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 code,

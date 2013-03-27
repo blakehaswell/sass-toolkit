@@ -1,0 +1,5 @@
+@mixin fontSize($fontSize, $lineHeight: $baseLineHeight) {
+    font-size: #{$fontSize}px; // Fallback for IE.
+    font-size: pxToRem($fontSize);
+    line-height: ($lineHeight / $fontSize);
+}

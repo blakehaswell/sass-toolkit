@@ -1,9 +1,15 @@
 Mixins
 ======
 
-## backgroundImageRetina($fileName, $width, $height)
+## backgroundImageRetina($fileName, $width, $height: null)
 
-The `backgroundImageRetina` mixin takes a filename, a width, and a height. It will set the `background-image` property to `filename + ".png"`, as well as creating a media query which will set the `background-image` property to `filename + "@2x.png"` as well as the `background-size` property.
+The `backgroundImageRetina` mixin allows you to easily set a background image that supports standard and retina displays. The mixin only supports `.png` files. The background image for retina devices is expected to have the same name as the standard background image, except with @2x at the end (e.g. `"background@2x.png"`).
+
+### Arguments:
+
+*   `$fileName`: The relative path to the background images, minus the extension (which is assumed to be `.png` for the standard image and `@2x.png` for the retina image).
+*   `$width`: The width of the standard background image.
+*   `$height` (optional): The height of the standard background image. If not provided it is presumed that the height is the same as the width.
 
 ### Example:
 
@@ -25,20 +31,19 @@ The `backgroundImageRetina` mixin takes a filename, a width, and a height. It wi
 
 ## clearfix
 
-### Example:
+Including the `clearfix` mixin forces the element to contain any floated child elements.
 
-    @include clearfix;
+### Example:
+    
+    .container {
+        @include clearfix;
+    }
 
 ### Produces:
 
-    zoom: 1; // Trigger hasLayout in IE6/7
-
-    &:before,
-    &:after {
+    .container:after {
         content: "";
         display: table;
-    }
-    &:after {
         clear: both;
     }
 
