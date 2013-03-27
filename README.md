@@ -8,5 +8,5 @@ Sass Toolkit will provide you with the tools and folder structure so that you ca
 Installing Sass Toolkit
 -----------------------
 
-$ git clone git://github.com/blakehaswell/sass-toolkit.git
-$ mv sass-toolkit/* ~/My-Project/sass/
+    $ git clone git://github.com/blakehaswell/sass-toolkit.git
+    $ mv sass-toolkit/* ~/My-Project/sass/
