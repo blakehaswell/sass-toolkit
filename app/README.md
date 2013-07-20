@@ -1,1 +1,0 @@
-Your app specific styles live in this directory.
