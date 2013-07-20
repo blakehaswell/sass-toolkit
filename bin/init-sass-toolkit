@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+
+// create sass directory
+fs.mkdir('sass', function (err) {
+    if (err) {
+        throw new Error(err);
+    }
+    
+    // create sub-dirs
+    fs.mkdir('sass/foundation');
+    fs.mkdir('sass/layouts');
+    fs.mkdir('sass/modules');
+    fs.mkdir('sass/widgets');
+    
+    // read data from app.scss specimen
+    fs.readFile(__dirname + '/../specimen/app.scss', function (err, data) {
+        // create app.scss file and write the contents from the specimen
+        fs.writeFile('sass/app.scss', data, function (err) {});
+    });
+    
+    // read data from _config.scss specimen
+    fs.readFile(__dirname + '/../specimen/_config.scss', function (err, data) {
+        // create _config.scss file and write the contents from the specimen
+        fs.writeFile('sass/_config.scss', data, function (err) {});
+    });
+});

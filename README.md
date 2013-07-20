@@ -7,6 +7,10 @@ Sass Toolkit will provide you with the tools and folder structure so that you ca
 
 Installing Sass Toolkit
 -----------------------
+    
+    $ npm install sass-toolkit
+    $ ./node_modules/.bin/init-sass-toolkit
 
-    $ git clone git://github.com/blakehaswell/sass-toolkit.git
-    $ mv sass-toolkit/* ~/My-Project/sass/
+By default, Sass toolkit installs in the ./sass directory, but you can override that by passing in a Sass directory.
+
+    $ ./node_modules/.bin/init-sass-toolkit ./somedir/sass/
